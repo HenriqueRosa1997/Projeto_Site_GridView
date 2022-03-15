@@ -1,0 +1,120 @@
+body{
+    background-color: gainsboro;
+    margin: auto;
+}
+
+.hero{
+    margin: 0;
+    width: 100%;
+    height: 400px;
+    background-image: url(imagens/london.jpg);
+    text-align: right;
+    background-position:  center;
+}
+nav ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding-right: 30px;
+    font-size: 15px; 
+}
+nav ul li a{
+    text-decoration: none;
+}
+nav ul li a:hover{
+ color: yellow;
+}
+
+nav ul li a:visited{
+    color: white;
+}
+
+body h1{
+    text-align: center;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+.texto{
+    text-align: center;
+}
+.principal{
+    display: grid;
+    justify-content: center;
+    gap: 16px;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 'primeira segunda terceira'
+    'primeira quarta quinta';
+
+}
+.item-1{
+    grid-area: primeira;
+    height: 420px;
+    width: 500px; 
+}
+
+.item-1 img{
+    height: 100%;
+    width: 100%;
+} 
+.item-2{
+    grid-area: segunda;
+}
+.item-3{
+    grid-area: terceira;
+}
+.item-4{
+    grid-area: quarta;
+}
+.item-5{
+    grid-area: quinta;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+} 
+
+.secundaria{ 
+    align-items: center;
+
+
+}
+
+.grid2{
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'primeira segunda ';
+}
+.item-6{
+    grid-area: primeira;
+    background-color: white;
+     height: 350px; 
+}
+.item-6 p{
+    padding-left: 15px;
+}
+.item-6 img{
+    justify-content: center;
+   height: 200px;
+    width: 400px;
+
+}
+
+.item-7{
+    grid-area: segunda;
+    background-color: white;
+    height: 350px;
+    
+}
+.item-7 img{
+    height: 200px;
+    width: 400px;
+} 
