@@ -85,6 +85,10 @@ img{
 
 }
 
+.texto1 p {
+    text-align: center;
+}
+
 .grid2{
     justify-content: center;
     align-content: center;
@@ -109,6 +113,7 @@ img{
 }
 
 .item-7{
+    margin: auto;
     grid-area: segunda;
     background-color: white;
     height: 350px;
@@ -118,3 +123,45 @@ img{
     height: 200px;
     width: 400px;
 } 
+.item-7 p {
+    padding-left: 15px;
+}
+
+.email{
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #353839;
+    width: 60%;
+    height: auto;
+}
+.email h1{
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.email input{
+    height: 25px;
+    width: 80%;
+}
+
+.email p {
+    margin: 0;
+    color: white;
+    padding-top: 5px;
+}
+
+.email button{
+    margin-top: 10px;
+    height: 40px;
+    background-color: red;
+    color: white;
+
+}
+.contatos{
+    padding-left: 40px;
+}
+.contatos p {
+    color: #353839;
+}
