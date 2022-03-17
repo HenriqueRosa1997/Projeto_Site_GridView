@@ -35,17 +35,21 @@ nav ul li a:visited{
 }
 
 body h1{
-    text-align: center;
+    text-align: left;
     font-size: 35px;
     font-family: sans-serif;
 }
 .texto{
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
 }
 .principal{
     display: grid;
+    width: 90%;
+    margin: auto;
     justify-content: center;
     gap: 16px;
+    grid-template-columns: 3fr 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
     grid-template-areas: 'primeira segunda terceira'
     'primeira quarta quinta';
@@ -53,8 +57,6 @@ body h1{
 }
 .item-1{
     grid-area: primeira;
-    height: 420px;
-    width: 500px; 
 }
 
 .item-1 img{
@@ -63,36 +65,55 @@ body h1{
 } 
 .item-2{
     grid-area: segunda;
+  
+
 }
+.item-2 img{
+    height: 100%;
+    width: 100%;
+}
+
 .item-3{
     grid-area: terceira;
 }
+.item-3 img{
+    height: 100%;
+    width: 100%;
+}
+
 .item-4{
     grid-area: quarta;
+
+}
+
+.item-4 img{
+    height: 100%;
+    width: 100%;
 }
 .item-5{
     grid-area: quinta;
-}
 
-img{
-    height: 200px;
-    width: 200px;
-} 
+}
+.item-5 img{
+    height: 100%;
+    width: 100%;
+}
 
 .secundaria{ 
     align-items: center;
-
-
+    margin: auto;
 }
 
 .texto1 p {
-    text-align: center;
+    text-align: left;
+    padding-left: 20px;
 }
 
 .grid2{
-    justify-content: center;
-    align-content: center;
     display: grid;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
     gap: 10px;
     grid-template-rows: 1fr;
     grid-template-areas: 'primeira segunda ';
@@ -100,40 +121,38 @@ img{
 .item-6{
     grid-area: primeira;
     background-color: white;
-     height: 350px; 
+    max-width: 400px;
+    min-width: 120px;
 }
 .item-6 p{
     padding-left: 15px;
 }
 .item-6 img{
     justify-content: center;
-   height: 200px;
-    width: 400px;
+    max-width: 100%;
+    height: 200px;
 
 }
 
 .item-7{
-    margin: auto;
     grid-area: segunda;
     background-color: white;
-    height: 350px;
+    max-width: 400px;
+    min-width: 120px;
     
 }
 .item-7 img{
     height: 200px;
-    width: 400px;
+    max-width: 100%;
 } 
 .item-7 p {
     padding-left: 15px;
 }
 
 .email{
-    padding-left: 20px;
-    margin-top: 10px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 10px;
+    margin-top: 5%;
     background-color: #353839;
-    width: 60%;
     height: auto;
 }
 .email h1{
@@ -143,7 +162,7 @@ img{
 }
 .email input{
     height: 25px;
-    width: 80%;
+    width: 90%;
 }
 
 .email p {
@@ -157,11 +176,28 @@ img{
     height: 40px;
     background-color: red;
     color: white;
+    margin-bottom: 15px;
 
 }
 .contatos{
-    padding-left: 40px;
+    padding: 10px;
 }
 .contatos p {
     color: #353839;
+}
+.contatos2{
+    padding: 10px
+}
+.contatos2 input{
+    height: 35px;
+    border: 1px solid #353839;
+    width: 90%;
+    margin-bottom: 10px;
+
+}
+.contatos2 button{
+    text-transform: uppercase;
+    height:40px ;
+    background-color: black;
+    color: white;
 }
